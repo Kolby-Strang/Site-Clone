@@ -9,18 +9,32 @@
         integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
     <!-- MDI -->
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css">
     <title>Site Clone</title>
 </head>
 
-<body>
+<body id="body">
 
     <header class="fw-bold fs-1 sticky-top container-fluid bg-primary">
-        <div class="row">
-            <div class="col-12 px-1 px-md-5">
-                <i class="mdi mdi-star-box-outline"></i>
-                <p class="d-inline">Lorem, ipsum.</p>
+        <div class="row align-items-center">
+            <div class="col-10 px-1 px-md-5">
+                <i class="mdi mdi-expansion-card"></i>
+                <p class="d-inline special-font">Electric Metrics</p>
+            </div>
+            <div class="col-2 text-end d-relative">
+                <button class="btn fs-1 menu-button">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-success" onclick="window.scrollTo(0, 700)">Who Are We?</button>
+                    <button class="btn btn-success" onclick="window.scrollTo(0, 1000)">4090 Release!</button>
+                    <button class="btn btn-success" onclick="window.scrollTo(0, 1555)">Reviews</button>
+                </div>
             </div>
         </div>
     </header>
@@ -30,7 +44,7 @@
 
         <!-- SECTION HERO -->
         <div class="row hero p-3 p-md-5">
-            <div class="col-12 col-md-5 bg-white rounded p-4">
+            <div class="col-12 col-md-5 bg-white rounded p-4 my-4">
 
                 <!-- NOT MY CODE -->
                 <!-- but i made slight aesthetic mods because the integrated icons weren't mdi/centering -->
@@ -97,48 +111,61 @@
                 </form>
 
             </div>
-            <!-- THIS IS THE END OF THE CODE THAT ISN'T MINE -->
+            <!-- END OF THE CODE THAT ISN'T MINE -->
 
             <!-- HERO TEXT -->
             <div class="col-7 d-none d-md-block hero-text">
-                <p class="fw-bold fs-1">Lorem ipsum dolor sit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi exercitationem, tempore
-                    recusandae magni necessitatibus!</p>
+                <p class="fw-bold fs-1 special-font">Transistors Galore</p>
+                <p>Our online store prides itself on having the largest inventory on all the gizmos and doo dads your
+                    heart desires. Never look further than Electric Metrics<i class="mdi mdi-trademark"></i> for all
+                    your computerized needs.</p>
             </div>
         </div>
 
         <!-- SECTION SUB HERO ROW -->
-        <div class="row bg-primary p-5 justify-content-between position-relative">
+        <div class="row bg-primary p-2 p-md-5 justify-content-between position-relative">
             <div class="col-12 col-md-5 text-white">
-                <p class="fw-bold">Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quibusdam ipsum. Rerum suscipit, porro,
-                    atque, voluptatem quidem voluptas quibusdam saepe eaque officiis ea minus cum quae dolorem explicabo
-                    tempore eos?</p>
+                <p class="fw-bold">We assure quality in everything we do!</p>
+                <p>Whether you are purchasing a pre-built pc, or are just stopping by to stock up on some thermal paste,
+                    we quality check every product on our shelves to ensure a top notch user experience through us. Gone
+                    are the days of buying a gpu that was damaged in shipping.</p>
             </div>
-            <div class="col-12 col-md-5 spill-card">
-                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
-                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
-                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
-                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
-                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="col-12 col-md-6 col-lg-5 spill-card">
+                <p><i class="mdi mdi-expansion-card-variant fs-3 text-success gpu"></i> Bleeding and trailing edge
+                    technology always
+                <p><i class="mdi mdi-wrench fs-3 text-secondary wrench"></i> Our employees treat PCs as their own</p>
+                <p><i class="mdi mdi-star fs-3 text-warning star"></i> Five star customer service</p>
+                <p><i class="mdi mdi-check-bold fs-3 text-success check"></i> Pre-builts with several quality
+                    checkpoints</p>
+                <p><i class="mdi mdi-refresh fs-3 text-danger mdi-spin"></i> Quick and easy Always-Returnable
+                    <i class="mdi mdi-trademark"></i>
+                    policy
+                </p>
+                </p>
             </div>
         </div>
 
         <!-- SECTION MIDDLE AREA -->
-        <div class="row middle-row">
+        <div class="row p-2 p-md-4 align-items-center">
             <div class="col-12 col-md-5">
-                <img class="img-fluid"
+                <!-- THIS WAS AN IMAGE THAT I REPLACED WITH A YOUTUBE VIDEO 
+                    <img class="img-fluid"
                     src="https://images.unsplash.com/photo-1621164071312-67bb68821b3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
-                    alt="rtx-4090">
+                    alt="rtx-4090"> -->
+                <iframe class="py-5" width="560" height="315"
+                    src="https://www.youtube.com/embed/lwCydWkSarY?si=JJdfPFbgytQdPb52" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
             <div class="col-12 col-md-7 p-3">
                 <div class="text-center">
-                    <i class="mdi mdi-lock fs-1"></i>
+                    <i class="mdi mdi-new-box fs-1"></i>
                 </div>
-                <p class="fw-bold fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus accusamus aut minus deleniti,
-                    iste recusandae in nesciunt nulla deserunt! Laboriosam praesentium laudantium corrupti facere autem
-                    eaque, soluta molestiae quae tempore!</p>
+                <p class="fw-bold fs-5">RTX-4090 PCs OUT NOW!</p>
+                <p>We just recently released out top end, overclocked and stress tested gaming rigs!</p>
+                <p>Complete with system-wide water-cooling (yes even the vrm), these computers are sure to last and
+                    outperform beyond their years!</p>
                 <div class="text-end">
                     <button class="btn btn-warning px-5">Buy Now</button>
                 </div>
@@ -148,29 +175,27 @@
         <div class="row bg-light justify-content-around align-items-center p-2 p-md-5">
             <div class="col-12 col-md-3 card order-2 order-md-1">
                 <i class="mdi mdi-format-quote-open"></i>
-                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
-                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
-                    nam vel, placeat recusandae aspernatur?</p>
-                <p class="text-primary">- Lorem, ipsum. </p>
+                <p class="text-center">I can't believe how much inventory they had! I was able to find a replacement
+                    part for my 20 year old desktop!</p>
+                <p class="text-primary">- Anonymous</p>
             </div>
-            <div class="col-12 col-md-3 card order-1 order-md-2">
+            <div class="col-12 col-md-4 card order-1 order-md-2">
                 <p class="text-center text-success fs-3">
                     <i class="mdi mdi-star d-inline"></i>
                     <i class="mdi mdi-star d-inline"></i>
                     <i class="mdi mdi-star d-inline"></i>
                 </p>
                 <i class="mdi mdi-format-quote-open"></i>
-                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
-                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
-                    nam vel, placeat recusandae aspernatur?</p>
-                <p class="text-primary">- Lorem, ipsum. </p>
+                <p class="text-center">I've bought all my computer parts from Electric Metrics and I could not be
+                    happier, any problems at all(user error of course) were only one phone call away from solution! I
+                    didn't know a simple computer store could've known so much!</p>
+                <p class="text-primary">- Einstein?!</p>
             </div>
             <div class="col-12 col-md-3 card order-3">
                 <i class="mdi mdi-format-quote-open"></i>
-                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
-                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
-                    nam vel, placeat recusandae aspernatur?</p>
-                <p class="text-primary">- Lorem, ipsum. </p>
+                <p class="text-center">Who knew that a pre-built could be so neat! I don't think I could've possibly
+                    done a better job than their skilled technicians!</p>
+                <p class="text-primary">- Someone, Somewhere </p>
             </div>
         </div>
 
@@ -180,8 +205,8 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col-12 bg-primary p-5  text-white">
-                <p class="fs-3">Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, odio.</p>
+                <p class="fs-3 special-font">Electric Metrics</p>
+                <p>The store specialists trust with all their needs</p>
             </div>
             <div class="col-12 bg-light p-5 text-center">
                 <p class="m-0">Copyright Stuff and things</p>

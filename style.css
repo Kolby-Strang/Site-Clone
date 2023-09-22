@@ -1,3 +1,7 @@
+.special-font {
+    font-family: 'croissant one', cursive;
+}
+
 .hero {
     background-image: url(https://images.unsplash.com/photo-1555589228-135c25ae8cf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
     background-size: cover;
@@ -5,9 +9,11 @@
 
 .hero-text {
     color: white;
-    text-shadow: 0 0 6px black;
+    text-shadow: 2px 2px 3px #0d6efd;
+    -webkit-text-stroke: .5px black;
+    font-weight: bold;
     padding-left: 8em;
-    padding-top: 2em;
+    padding-top: 4em;
     position: relative;
 }
 
@@ -24,6 +30,7 @@
 }
 
 .spill-card {
+    margin-top: 1em;
     margin-bottom: 1em;
     padding: 2em;
     background-color: white;
@@ -38,12 +45,6 @@
     margin: 0;
 }
 
-.middle-row {
-    padding: 2em;
-    padding-right: 1em;
-    align-items: center;
-}
-
 .card {
     background-color: white;
     border-radius: 5px;
@@ -54,8 +55,113 @@
     margin-top: 1em;
 }
 
+iframe {
+    height: 30em;
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: .2em;
+    bottom: .25em;
+}
+
+.menu-button:hover+.dropdown {
+    display: block;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.star {
+    animation: ease-in-out 2s star infinite;
+    display: inline-block;
+}
+
+@keyframes star {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.check {
+    animation: ease-in-out 2s check infinite;
+    display: inline-block;
+}
+
+@keyframes check {
+    0% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(.8);
+    }
+}
+
+.wrench {
+    animation: ease-in-out 2s wrench infinite;
+    display: inline-block;
+    transform-origin: 22% 32%;
+}
+
+@keyframes wrench {
+
+    0%,
+    100% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+.gpu {
+    animation: linear gpu 1s infinite;
+    display: inline-block;
+    transform-origin: 50% 80%;
+}
+
+@keyframes gpu {
+
+    0%,
+    100% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
 @media(max-width: 767px) {
     .spill-card {
         position: static;
+    }
+}
+
+@media(max-width: 977px) {
+    .hero-text:before {
+        height: 15em;
     }
 }
