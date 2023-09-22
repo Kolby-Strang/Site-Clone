@@ -1,0 +1,61 @@
+.hero {
+    background-image: url(https://images.unsplash.com/photo-1555589228-135c25ae8cf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+}
+
+.hero-text {
+    color: white;
+    text-shadow: 0 0 6px black;
+    padding-left: 8em;
+    padding-top: 2em;
+    position: relative;
+}
+
+.hero-text:before {
+    left: 6.5em;
+    height: 10em;
+    width: .5em;
+    border-radius: 8px;
+    display: block;
+    background-color: #0d6efd;
+    color: #0d6efd;
+    content: ".";
+    position: absolute;
+}
+
+.spill-card {
+    margin-bottom: 1em;
+    padding: 2em;
+    background-color: white;
+    position: absolute;
+    right: 2em;
+    order: -1;
+    box-shadow: 0 3px 5px black;
+    border-radius: 7px;
+}
+
+.spill-card>p {
+    margin: 0;
+}
+
+.middle-row {
+    padding: 2em;
+    padding-right: 1em;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.39);
+    height: min-content;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+@media(max-width: 767px) {
+    .spill-card {
+        position: static;
+    }
+}

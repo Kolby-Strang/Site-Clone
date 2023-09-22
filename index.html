@@ -16,18 +16,177 @@
 
 <body>
 
-    <header class="sticky-top container-fluid">
-        hola
+    <header class="fw-bold fs-1 sticky-top container-fluid bg-primary">
+        <div class="row">
+            <div class="col-12 px-1 px-md-5">
+                <i class="mdi mdi-star-box-outline"></i>
+                <p class="d-inline">Lorem, ipsum.</p>
+            </div>
+        </div>
     </header>
 
 
     <main class="container-fluid">
-        <div style="padding-bottom: 20500px;"></div>
+
+        <!-- SECTION HERO -->
+        <div class="row hero p-3 p-md-5">
+            <div class="col-12 col-md-5 bg-white rounded p-4">
+
+                <!-- NOT MY CODE -->
+                <!-- but i made slight aesthetic mods because the integrated icons weren't mdi/centering -->
+                <form class="text-center">
+                    <p>This form is <span class="text-danger">NOT</span> mine. -Kolby</p>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4 justify">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="form3Example1" class="form-control" />
+                                <label class="form-label" for="form3Example1">First name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="form3Example2" class="form-control" />
+                                <label class="form-label" for="form3Example2">Last name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3" class="form-control" />
+                        <label class="form-label" for="form3Example3">Email address</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4" class="form-control" />
+                        <label class="form-label" for="form3Example4">Password</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                        <label class="form-check-label" for="form2Example33">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                        <p>or sign up with:</p>
+                        <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="mdi mdi-facebook"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="mdi mdi-google"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="mdi mdi-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="mdi mdi-github"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- THIS IS THE END OF THE CODE THAT ISN'T MINE -->
+
+            <!-- HERO TEXT -->
+            <div class="col-7 d-none d-md-block hero-text">
+                <p class="fw-bold fs-1">Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi exercitationem, tempore
+                    recusandae magni necessitatibus!</p>
+            </div>
+        </div>
+
+        <!-- SECTION SUB HERO ROW -->
+        <div class="row bg-primary p-5 justify-content-between position-relative">
+            <div class="col-12 col-md-5 text-white">
+                <p class="fw-bold">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quibusdam ipsum. Rerum suscipit, porro,
+                    atque, voluptatem quidem voluptas quibusdam saepe eaque officiis ea minus cum quae dolorem explicabo
+                    tempore eos?</p>
+            </div>
+            <div class="col-12 col-md-5 spill-card">
+                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="mdi mdi-wrench fs-3"></i> Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+
+        <!-- SECTION MIDDLE AREA -->
+        <div class="row middle-row">
+            <div class="col-12 col-md-5">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1621164071312-67bb68821b3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
+                    alt="rtx-4090">
+            </div>
+            <div class="col-12 col-md-7 p-3">
+                <div class="text-center">
+                    <i class="mdi mdi-lock fs-1"></i>
+                </div>
+                <p class="fw-bold fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus accusamus aut minus deleniti,
+                    iste recusandae in nesciunt nulla deserunt! Laboriosam praesentium laudantium corrupti facere autem
+                    eaque, soluta molestiae quae tempore!</p>
+                <div class="text-end">
+                    <button class="btn btn-warning px-5">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION CARDS -->
+        <div class="row bg-light justify-content-around align-items-center p-2 p-md-5">
+            <div class="col-12 col-md-3 card order-2 order-md-1">
+                <i class="mdi mdi-format-quote-open"></i>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
+                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
+                    nam vel, placeat recusandae aspernatur?</p>
+                <p class="text-primary">- Lorem, ipsum. </p>
+            </div>
+            <div class="col-12 col-md-3 card order-1 order-md-2">
+                <p class="text-center text-success fs-3">
+                    <i class="mdi mdi-star d-inline"></i>
+                    <i class="mdi mdi-star d-inline"></i>
+                    <i class="mdi mdi-star d-inline"></i>
+                </p>
+                <i class="mdi mdi-format-quote-open"></i>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
+                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
+                    nam vel, placeat recusandae aspernatur?</p>
+                <p class="text-primary">- Lorem, ipsum. </p>
+            </div>
+            <div class="col-12 col-md-3 card order-3">
+                <i class="mdi mdi-format-quote-open"></i>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos amet illo.
+                    Molestiae pariatur harum nemo blanditiis enim aliquam iure nobis perferendis delectus deleniti earum
+                    nam vel, placeat recusandae aspernatur?</p>
+                <p class="text-primary">- Lorem, ipsum. </p>
+            </div>
+        </div>
+
     </main>
 
 
     <footer class="container-fluid">
-
+        <div class="row">
+            <div class="col-12 bg-primary p-5  text-white">
+                <p class="fs-3">Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, odio.</p>
+            </div>
+            <div class="col-12 bg-light p-5 text-center">
+                <p class="m-0">Copyright Stuff and things</p>
+            </div>
+        </div>
     </footer>
 
 </body>
